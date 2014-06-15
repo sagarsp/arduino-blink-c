@@ -16,7 +16,7 @@ Once you have arduino, you can program your arduino with JAVA coding style insid
         sudo apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude
 
 (3) When the installation finishes, open the file blink.c in any text editor.   
-    - You can find \_BV used for accessing PORTB, which is MACRO defined in the headers located at "/usr/lib/avr/include/avr/iom328p.h" and “/usr/lib/avr/include/avr/sfr_defs.h”.  
+    - You can find _BV used for accessing PORTB, which is MACRO defined in the headers located at "/usr/lib/avr/include/avr/iom328p.h" and “/usr/lib/avr/include/avr/sfr_defs.h”.  
     - Delay function is defined in utils/delay.h.   
     - All other things are self explainable.    
   
