@@ -10,7 +10,7 @@ Follow the steps.
 (1) Install Arduino environment by typing following command in shell.   
         sudo apt-get update && sudo apt-get install arduino arduino-core
 
-Once you have arduino, you can program your arduino with JAVA coding style inside Arduino IDE. But for programming it with C, you need to install other tools.
+Once you have arduino, you can program your arduino with Arduino's default coding style inside Arduino IDE. But for programming it with pure C (ANSI), you need to install other tools.
 
 (2) Install gcc-avr, binutils-avr, gbd-avr, avr-libc and avrdude using following command.   
         sudo apt-get install gcc-avr binutils-avr gdb-avr avr-libc avrdude
