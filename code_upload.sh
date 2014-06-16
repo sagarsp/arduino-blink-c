@@ -9,25 +9,21 @@ fi
 echo "####################################################"
 echo "Making object file"
 echo "####################################################"
-sleep 3
 avr-gcc -Os -DF_APU=16000000UL -mmcu=atmega328p -c -o ${program_name}.o ${program_name}.c
 
 echo "####################################################"
 echo "Making executable file"
 echo "####################################################"
-sleep 3
 avr-gcc -mmcu=atmega328p ${program_name}.o -o ${program_name}
 
 echo "####################################################"
 echo "Making HEX file"
 echo "####################################################"
-sleep 3
 avr-objcopy -O ihex -R .eeprom ${program_name} ${program_name}.hex
 
 echo "####################################################"
 echo "Dumping the file at given port"
 echo "####################################################"
-sleep 3
 sudo avrdude -F -V -c arduino -p ATMEGA328p -P ${2} -b ${3} -U flash:w:${program_name}.hex
 
 echo "####################################################"
